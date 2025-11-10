@@ -3,29 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ - Vinh</title>
+    <title>Trang Chủ - Ngô Quang Vinh</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
-        nav { padding: 10px; background-color: #007bff; border-radius: 5px; }
-        nav a { margin-right: 25px; text-decoration: none; color: white; font-weight: bold; padding: 5px; transition: background-color 0.3s; }
-        nav a:hover { background-color: #0056b3; border-radius: 3px; }
-        h1 { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        p { line-height: 1.6; }
+        body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+        
+        h1 { color: #551a8b; /* Màu tím */ } 
+
+        ul.nav-menu { 
+            list-style-type: none; 
+            padding: 0; 
+            margin-bottom: 30px;
+        }
+        ul.nav-menu li a { 
+            color: purple; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        ul.nav-menu li { 
+            margin-bottom: 5px; 
+        }
+        
+        h2 { color: black; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 30px;}
+
+        .subscribe-form input[type="email"] {
+            padding: 5px;
+            border: 1px solid green;
+        }
+        .subscribe-form input[type="submit"] {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="trangchu.html">Trang Chủ</a>
-        <a href="thongtin.html">Thông Tin về Vinh</a>
-        <a href="dichvu.html">Dịch Vụ của Vinh</a>
-    </nav>
-
-    <h1>Chào mừng đến với Website cá nhân của Vinh! 👋</h1>
-    <p>Đây là trang chủ giới thiệu cơ bản. Hãy khám phá các mục khác để tìm hiểu thêm về Vinh và những dịch vụ mà Vinh cung cấp.</p>
+    <h1>Ngô Quang Vinh Web Design</h1>
     
-    <p>Trang web này được tạo ra như một bài tập đơn giản trong khóa **Thiết kế Web**.</p>
+    <ul class="nav-menu">
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="thongtin.html">Thông Tin</a></li>
+        <li><a href="dichvu.html">Dịch Vụ</a></li>
+    </ul>
 
-    <p style="margin-top: 50px; text-align: right;">[Bài tiếp theo &gt;]</p>
+    <h2>Thiết kế website chuyên nghiệp</h2>
+    <p>Chúng tôi cung cấp các dịch vụ thiết kế website chuyên nghiệp, giá cả hợp lý theo yêu cầu khách hàng.</p>
+    
+    <h3>Đăng ký nhận thông báo mới từ chúng tôi</h3>
+    <div class="subscribe-form">
+        <input type="email" placeholder="Nhập Email">
+        <input type="submit" value="Đăng ký">
+    </div>
+
+    <hr>
+    
+    <h2>Ngôn ngữ HTML5</h2>
+    <p>HTML5 là một ngôn ngữ cấu trúc và trình bày nội dung cho World Wide Web và sẽ là công nghệ cốt lõi của Internet trong tương lai không xa, được đề xuất đầu tiên bởi Opera Software.</p>
+    
+    <h2>Ngôn ngữ CSS3</h2>
+    <p>CSS3 là viết tắt của Cascading Style Sheet level 3, là phiên bản nâng cao của CSS. Được sử dụng để cấu trúc, tạo kiểu và định dạng các trang web. Một số tính năng mới đã được thêm vào CSS3 và được hỗ trợ bởi tất cả các trình duyệt web hiện đại.</p>
+    
+    <h2>Thiết kế đồ họa</h2>
+    <p>Thiết kế đồ họa là cụm từ chỉ một chuyên ngành thuộc về mỹ thuật. Trong đó từ "đồ họa" để chỉ những bản vẽ được hiển thị trên một mặt phẳng, và động từ "thiết kế" bao hàm ý nghĩa kiến thiết, sáng tạo.</p>
+    
+    <p style="text-align: right; margin-top: 50px;">[Bài tiếp theo &gt;]</p>
 
 </body>
 </html>
