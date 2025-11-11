@@ -18,11 +18,12 @@
             overflow-x: hidden; /* Ngăn chặn thanh cuộn ngang nếu ảnh quá lớn */
         }
         
-        /* CSS MỚI CHO HAI ẢNH DỌC Ở HAI BÊN */
+        /* CSS CHỈNH SỬA KÍCH THƯỚC HAI ẢNH DỌC Ở HAI BÊN */
         .side-image {
             position: fixed; /* Giữ ảnh cố định khi cuộn */
             top: 0;
-            width: 200px; /* Chiều rộng của ảnh. Bạn có thể thay đổi */
+            /* ĐIỀU CHỈNH: Chiều rộng tăng lên 250px (hoặc 25vw để linh hoạt) */
+            width: 250px; 
             height: 100%; /* Chiều cao chiếm toàn bộ chiều cao màn hình */
             object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ vùng mà không bị méo */
             z-index: -1; /* Đặt ảnh ở lớp dưới cùng, phía sau nội dung */
@@ -35,6 +36,19 @@
         .right-image {
             right: 0;
         }
+
+        /* MEDIA QUERY: Tối ưu cho màn hình rộng hơn 1400px */
+        @media (min-width: 1400px) {
+            .side-image {
+                /* Chiều rộng chiếm 15% chiều rộng màn hình, linh hoạt hơn */
+                width: 15vw; 
+            }
+            .container {
+                /* Giảm kích thước container chính để tạo thêm không gian cho ảnh bên */
+                max-width: 1100px;
+            }
+        }
+        /* KẾT THÚC MEDIA QUERY */
 
         .container {
             max-width: 1000px;
